@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+button:focus, input:focus {
+	outline: none;
+}
+
+.cont-limite {
+	height: inherit;
+	width: 800px;
+	max-width: calc(100% - 10px);
+	margin: auto;
+}
+.link {
+	color: #0b73bd;
+}
+.link:hover {
+	text-decoration: none;
+}
+
+
+.header {
+	height: 60px;
+	width: 100%;
+	background-color: #dee3e3;
+}
+.header > .cont-limite {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.header > .cont-limite > .logo {
+	height: calc(100% - 4px);
+	width: auto;
+}
+
+
+.main > .cont-limite {
+	padding: 2em 0;
+}
+.main > .cont-limite > .titulo {
+	text-align: center;
+	margin-bottom: 1em;
+}
+.main > .cont-limite > .descripcion {
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+.input-section {
+	max-width: 100%;
+	width: 400px;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 2em;
+	border: 1px solid #ddd;
+
+	background-color: #f3f3f3;
+	border-radius: 2px;
+}
+.input-section > .input-date {
+	height: 34px;
+	width: 100%;
+	margin-bottom: .5em;
+
+	display: flex;
+}
+.input-section > .input-date > .label {
+	--border-radius: 2px;
+	height: inherit;
+	width: auto;
+	padding: 0 .6em;
+	border: 1px solid #ddd;
+	border-right: none;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	background-color: #fff;
+	font-size: .85em;
+	white-space: nowrap;
+	border-top-left-radius: var(--border-radius);
+	border-bottom-left-radius: var(--border-radius);
+}
+.input-section > .input-date > .input {
+	--border-radius: 2px;
+	height: inherit;
+	width: 100%;
+	padding: 0 .6em;
+	border: 1px solid #ddd;
+
+	background-color: #fff;
+	border-top-right-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
+}
+.input-section > .input-date > .input:hover {
+	background-color: #f9f9f9;
+	transition: .12s;
+}
+.input-section > .input-date > .input:focus {
+	border-color: #FC3D21;
+}
+.input-section > .button {
+	width: 100%;
+	padding: .8em 1em;
+	background-color: #0b73bd;
+	border: 1px solid #eee;
+	border-radius: 2px;
+
+	color: #fcfcfc;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+.input-section > .button:hover {
+	background-color: #0b4cbd;
+	transition: .12s;
+}
+
+
+.card-asteroide {
+	border: 1px solid #333;
+	margin-bottom: 2em;
+
+	position: relative;
+
+	border-radius: 2px;
+	background-color: #fff;
+}
+.card-asteroide.peligroso {
+	border-color: red;
+}
+.card-asteroide > .img {
+	max-width: 90%;
+	position: absolute;
+	left: 3px;
+	bottom: 5px;
+	z-index: 0;
+
+	opacity: .3;
+	filter: saturate(150%);
+}
+.card-asteroide > .info {
+	padding: 15px 10px;
+
+	position: relative;
+	z-index: 100;
+}
+.card-asteroide > .info > h2 {
+	margin-bottom: 1em;
+}
+.card-asteroide > .info p {
+	margin-bottom: .5em;
+}
+.card-asteroide > .info p:last-child {
+	margin-bottom: 0;
+}
+.card-asteroide > .info > .numerador {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.footer {
+	background-color: #f6f6f6;
+	padding: 1em 0;
+	margin-top: auto;
+}
